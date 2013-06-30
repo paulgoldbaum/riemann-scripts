@@ -49,4 +49,4 @@ do
 
 done
 
-riemann-cli send $@ --state "critical" --description "JVM pid $pid is down"
+riemann-cli send $@ --state "critical" --service $service --description "JVM pid $pid is down"
